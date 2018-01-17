@@ -13,10 +13,8 @@ print(f"Does the output file exists {exists(to_file)}")
 print("Ready, hit RETURN to continue, Ctrl+C to abort...")
 input()
 
-out_file = open(to_file, 'w')
-out_file.write(indata)
+#out_file = open(to_file, 'w')
+#out_file.write(indata)
+open(to_file, 'w').write(indata)
 
 print("Alright, all done")
-
-out_file.close()
-from_file.close()
